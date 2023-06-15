@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+.detail{
+    margin: 8%;
+    margin-top: 15%;
+}
+
+.detail h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+}
+
+.detail p{
+        color: #555;
+        line-height: 22px;
+
+}
+
+.detail a{
+    background: #212121;
+    padding: 5px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+
+.logo{
+    width: 10%;
+}
+
+.images{
+    display: block;
+    width: 40%;
+    height: 51%;
+    position: absolute;
+    bottom: 54px;
+    right: 13px;
+}
+
+.girl{
+    border-radius: 50px;
+    display: flex;
+    margin-left: 125px;
+    width: auto;
+    height: 39%;
+    transition: 1s;
+    
+}
+
+.imag{
+    display: block;
+    width: 39%;
+    height: 75%;
+    position: absolute;
+    bottom: 0px;
+    right: 26px;
+}
+
+.imag img{
+    height: 77%;
+    transform: translateX(0);
+    transition: bottom 1s, left 1s,;
+}
+
+.imag:hover .shape{
+    left: 0%;
+    filter: grayscale(.4);
+    transform: scale(1.8);
+    z-index: 2;
+}
+
+.images:hover .boy{
+    left: 0%;
+    filter: grayscale(.4);
+    transform: scale(1.8);
+    z-index: 2;
+}
+
+

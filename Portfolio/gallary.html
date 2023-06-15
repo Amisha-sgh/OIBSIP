@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding: 0px;
+        }
+      body {
+        background: #222;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+       
+      }
+
+      .thumbnails img {
+        height: 80px;
+        border: 4px solid #555;
+        padding: 1px;
+        margin: 0 10px 10px 0;
+      }
+
+      .thumbnails img:hover {
+        border: 4px solid #00ccff;
+      }
+
+      .preview img {
+        border: 4px solid #444;
+        padding: 1px;
+        width: 800px;
+      }
+
+      button {
+        padding: 6px;
+        width: 79px;
+        font-size: 16px;
+        border: 2px solid powderblue;
+        border-radius: 8px;
+      }
+
+      h1{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: 'Alkatra', cursive;
+        
+      }
+
+      .myimg{
+        z-index: -1;
+        position: absolute;
+        opacity: 0.3;
+        width: 100%;
+       
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="preview3.jpg" alt="" class="myimg">
+      <h1>My web page gallery</h1>
+      <br />
+
+      <div class="thumbnails">
+        <img
+          src="preview1.jpg"
+          onmouseover="preview.src=preview1.src"
+          name="preview1"
+        />
+        <img
+          src="preview2.jpg"
+          onmouseover="preview.src=preview2.src"
+          name="preview2"
+        />
+        <img
+          src="preview3.jpg"
+          onmouseover="preview.src=preview3.src"
+          name="preview3"
+        />
+        <img
+          src="preview4.jpg"
+          onmouseover="preview.src=preview4.src"
+          name="preview4"
+        />
+        <img
+          src="preview5.jpg"
+          onmouseover="preview.src=preview5.src"
+          name="preview5"
+        />
+        <img
+          src="preview6.jpg"
+          onmouseover="preview.src=preview6.src"
+          name="preview6"
+        />
+        <img
+          src="preview7.jpg"
+          onmouseover="preview.src=preview7.src"
+          name="preview7"
+        />
+      </div>
+
+      <div class="preview" align="center">
+        <img name="preview" src="preview1.jpg" /><br />
+        <button onclick="window.print()" align="center">Print</button>
+      </div>
+    </div>
+  </body>
+</html>

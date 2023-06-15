@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire me!</title>
+    <link rel="stylesheet" href="hire.css" />
+  </head>
+  <body>
+    <div class="contain">
+      <form name="submit-to-google-sheet" method="POST">
+        <h3>GET IN TOUCH</h3>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email Id"
+          required
+        />
+        <input
+          type="text"
+          name="phone"
+          id="phone"
+          placeholder="Phone no."
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Your message"
+        ></textarea>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
+
+   
+    <script src="script.js"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxG4eXPIY6yrY8oiAJjPv8PB9xMi5K-VcNuYGFtB8CC5Zvu4K69z_DdsBIEpxNQDrY99Q/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+   
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    #contact {
+  padding: 80px 0;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 20px;
+}
+
+.contact-list i {
+  margin-right: 10px;
+}
+
+form {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea.form-control {
+  resize: vertical;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #337ab7;
+  color: #fff;
+  text-decoration: none;
+}
+
+</style>
+<body>
+    <section id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Contact Information</h2>
+              <p>Feel free to reach out to me using the contact details below:</p>
+              <ul class="contact-list">
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <span>Email: amishasingh.16@gmail.com</span>
+                </li>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <span>Phone: +91 998*******</span>
+                </li>
+                <li>
+                  <i class="fa fa-map-marker"></i>
+                  <span>Address: Kanpur, Uttar Pradesh, India</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <form action="https://formspree.io/f/mzbqqdvj" method="post">
+                <h2>Contact Form</h2>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>
