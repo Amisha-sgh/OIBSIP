@@ -1,0 +1,66 @@
+body{
+    background-image: url('img/bg1.jpg');
+    width: 100%;
+}
+.body{
+    padding: 20px;
+}
+/*#bg{
+    width:100%;
+    height: max-content;
+}*/
+#heading{
+    padding: 10px;
+    background-color: white;
+    
+}
+#save{
+    background-color: green;
+    width: 240px;
+}
+#addtask{
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+#showtask{
+    margin-top: 20px;
+    margin-left: 10px;   
+}
+.task{
+    display: inline-block;
+    vertical-align: top;
+
+}
+#taskname{
+    font-style: italic;
+    margin-left: 10px;
+    inline-size: 100px;
+    word-wrap: break-word;
+}
+#describe{
+    font-style: oblique;
+    margin-left: 20px;
+    inline-size: 500px;
+    word-wrap: break-word;
+    }
+.tasks{
+    background-color: white;
+    
+}   
+#delete{
+    background-color: black;
+    height: 20px;
+    width:30px;
+    margin-left: 20px;
+} 
+.t{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*#line{
+    color: chartreuse;
+}*/

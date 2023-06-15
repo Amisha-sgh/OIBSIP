@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the TO DO Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="container">
+       
+        <div id="heading">
+            <h1>To Do List Web Page</h1>
+        </div>
+        <div class="body">
+            
+            <div class="task" id="addtask" >
+                <input type="text" placeholder="Title" id="title">
+                <br>
+                <textarea name="" id="decription" cols="30" rows="10" placeholder="Description"></textarea>
+                <br>
+                <button id="save">Save</button>
+            </div>
+            <div class="task" id="showtask">
+                <pre><h2 style="color: white;">Title                  Description                                 Delete</h2></pre>
+                <hr>
+            </div>
+        </div>
+        <div id="pendingtask">
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
